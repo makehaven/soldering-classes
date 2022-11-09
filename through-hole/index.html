@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>MakeHaven Electronics: Through-hole Soldering</title>
+    <meta name="description" content="Tutorial for the MakeHaven through-hole soldering class." />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext"
+      rel="stylesheet"
+    />
+
+    <!-- CSS Base -->
+    <link rel="stylesheet" type="text/css" media="all" href="../webslides-1.5.0/css/webslides.css" />
+    <style>
+      .gallery li {
+        background-color: white;
+      }
+      .flexblock.gallery li video {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    </style>
+
+    <!-- Optional - CSS SVG Icons (Font Awesome) -->
+    <link rel="stylesheet" type="text/css" media="all" href="../webslides-1.5.0/css/svg-icons.css" />
+
+    <!-- FAVICONS -->
+    <link rel="shortcut icon" sizes="16x16" href="../webslides-1.5.0/images/favicons/favicon.png" />
+    <link rel="shortcut icon" sizes="32x32" href="../webslides-1.5.0/images/favicons/favicon-32.png" />
+    <link rel="apple-touch-icon icon" sizes="76x76" href="../webslides-1.5.0/images/favicons/favicon-76.png" />
+    <link rel="apple-touch-icon icon" sizes="120x120" href="../webslides-1.5.0/images/favicons/favicon-120.png" />
+    <link rel="apple-touch-icon icon" sizes="152x152" href="../webslides-1.5.0/images/favicons/favicon-152.png" />
+    <link rel="apple-touch-icon icon" sizes="180x180" href="../webslides-1.5.0/images/favicons/favicon-180.png" />
+    <link rel="apple-touch-icon icon" sizes="192x192" href="../webslides-1.5.0/images/favicons/favicon-192.png" />
+
+    <!-- Android -->
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="theme-color" content="#333333" />
+  </head>
+  <body>
+    <main role="main">
+      <article id="webslides">
+        <section>
+          <div class="wrap">
+            <h1>MakeHaven through-hole soldering tutorial</h1>
+          </div>
+        </section>
+        <section>
+          <div class="wrap">
+            <h3>General flow</h3>
+            <ul class="flexblock gallery">
+              <li>
+                <figure>
+                  <img src="images/general-board-side.jpeg" />
+                  <figcaption>
+                    <h2>Location</h2>
+                    <p>
+                      Check component outlines printed on the board to see on which side the component bodies should end
+                      up.
+                    </p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img src="images/general-orientation.jpeg" />
+                  <figcaption>
+                    <h2>Orientation</h2>
+                    <p>
+                      Some components can go into the board multiple ways, but only one is correct; look for board
+                      markings and solder pad shapes.
+                    </p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img src="images/general-one-lead.jpeg" />
+                  <figcaption>
+                    <h2>Solder in one lead</h2>
+                    <p>Always start by soldering in just one lead.</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img src="images/general-height.jpeg" />
+                  <figcaption>
+                    <h2>Height</h2>
+                    <p>
+                      Check component height before continuing; some components should not be flush against the board.
+                    </p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img src="images/general-skew.jpeg" />
+                  <figcaption>
+                    <h2>Skew</h2>
+                    <p>Check if the component is angled away from the board before continuing.</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img src="images/general-all-leads.jpeg" />
+                  <figcaption>
+                    <h2>Solder in remaining leads</h2>
+                    <p>Finally, solder in the rest of the leads, and trim off excess if the leads are long.</p>
+                  </figcaption>
+                </figure>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section>
+          <div class="wrap">
+            <h3>Soldering</h3>
+            <ul class="flexblock gallery">
+              <li>
+                <figure>
+                  <video controls loop height="320px" poster="images/soldering-clean-tip-poster.jpeg">
+                    <source src="images/soldering-clean-tip.mov" />
+                  </video>
+                  <figcaption>
+                    <h2>Keep your soldering tip clean</h2>
+                    <p>Swipe it back and forth on the brass tip cleaner; use one hand to hold down the cleaner.</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img src="images/soldering-coat-tip.jpeg" />
+                  <figcaption>
+                    <h2>Coat the soldering tip</h2>
+                    <p>Coat the soldering tip with a small amount of solder.</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img src="images/soldering-heat-pad-lead.jpeg" />
+                  <figcaption>
+                    <h2>Heat the pad and the lead</h2>
+                    <p>Place the tip of the soldering iron where the soldering pad and the component lead meet.</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <video controls loop height="320px" poster="images/soldering-add-solder-poster.jpeg">
+                    <source src="images/soldering-add-solder.mov" />
+                  </video>
+                  <figcaption>
+                    <h2>Add solder</h2>
+                    <p>
+                      Hold the solder wire between your fingers, about an inch from the end; touch it to the soldering
+                      iron and let it flow onto the pad. You don't need much — and it’s easier to add than to remove.
+                    </p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <video controls loop height="320px" poster="images/soldering-remove-solder-poster.jpeg">
+                    <source src="images/soldering-remove-solder.mov" />
+                  </video>
+                  <figcaption>
+                    <h2>Move the solder away</h2>
+                    <p>Move the solder wire away from the soldering iron.</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <video controls loop height="320px" poster="images/soldering-remove-iron-poster.jpeg">
+                    <source src="images/soldering-remove-iron.mov" />
+                  </video>
+                  <figcaption>
+                    <h2>Move the iron away</h2>
+                    <p>Move the soldering iron away from the solder joint.</p>
+                  </figcaption>
+                </figure>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section>
+          <div class="wrap">
+            <h3>Resistors</h3>
+            <ul class="flexblock gallery">
+              <li>
+                <figure>
+                  <img src="images/resistor-outline.jpeg" />
+                  <figcaption>
+                    <h2>Location</h2>
+                    <p>There are six resistors, all identical.</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img src="images/resistor-orientation.jpeg" />
+                  <figcaption>
+                    <h2>Orientation</h2>
+                    <p>Orientation doesn’t matter.</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img src="images/resistor-prep.jpeg" />
+                  <figcaption>
+                    <h2>Prep</h2>
+                    <p>Bend leads slightly to keep the resistor from falling out.</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img src="images/resistor-height.jpeg" />
+                  <figcaption>
+                    <h2>Height</h2>
+                    <p>Make it flush or almost flush with the board.</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img src="images/resistor-trim-leads.jpeg" />
+                  <figcaption>
+                    <h2>Finishing up</h2>
+                    <p>Clip off excess leads.</p>
+                  </figcaption>
+                </figure>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section>
+          <div class="wrap">
+            <h3>Battery holder</h3>
+            <ul class="flexblock gallery">
+              <li>
+                <figure>
+                  <img src="images/battery-holder-outline.jpeg" />
+                  <figcaption>
+                    <h2>Location</h2>
+                    <p>There is one battery holder.</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img src="images/battery-holder-orientation.jpeg" />
+                  <figcaption>
+                    <h2>Orientation</h2>
+                    <p>Orientation matters.</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img src="images/battery-holder-prep.jpeg" />
+                  <figcaption>
+                    <h2>Prep</h2>
+                    <p>Tape it until you solder in the first pin.</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img src="images/battery-holder-height.jpeg" />
+                  <figcaption>
+                    <h2>Height</h2>
+                    <p>Make it flush with the board.</p>
+                  </figcaption>
+                </figure>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section>
+          <div class="wrap">
+            <h3>Switches</h3>
+            <ul class="flexblock gallery">
+              <li>
+                <figure>
+                  <img src="images/switch-outline.jpeg" />
+                  <figcaption>
+                    <h2>Location</h2>
+                    <p>There is one component; it contains four switches.</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img src="images/switch-orientation.jpeg" />
+                  <figcaption>
+                    <h2>Orientation</h2>
+                    <p>
+                      Orientation doesn’t <em>really</em> matter, but these instructions assume the “on” side is closer
+                      to the resistors.
+                    </p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img src="images/switch-prep.jpeg" />
+                  <figcaption>
+                    <h2>Prep</h2>
+                    <p>Tape it until you solder in the first pin.</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img src="images/switch-height.jpeg" />
+                  <figcaption>
+                    <h2>Height</h2>
+                    <p>Make it flush with the board.</p>
+                  </figcaption>
+                </figure>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section>
+          <div class="wrap">
+            <h3>LEDs</h3>
+            <ul class="flexblock gallery">
+              <li>
+                <figure>
+                  <img src="images/led-outline.jpeg" />
+                  <figcaption>
+                    <h2>Location</h2>
+                    <p>There are two LEDs, one on each side of the board.</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img src="images/led-orientation-leads.jpeg" />
+                  <figcaption>
+                    <h2>Orientation</h2>
+                    <p>
+                      Orientation matters; the long lead of the LED is on the same side as the rectangular solder pad..
+                    </p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img src="images/led-orientation-body.jpeg" />
+                  <figcaption>
+                    <h2>Orientation</h2>
+                    <p>The flat spot on the LED body is also on the same side..</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img src="images/led-prep.jpeg" />
+                  <figcaption>
+                    <h2>Prep</h2>
+                    <p>Bend the outside leads slightly to keep the LED from falling out.</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img src="images/led-height.jpeg" />
+                  <figcaption>
+                    <h2>Height</h2>
+                    <p>The flat spot on the leads should be just above the board.</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img src="images/led-trim-leads.jpeg" />
+                  <figcaption>
+                    <h2>Finishing up</h2>
+                    <p>Clip off excess leads.</p>
+                  </figcaption>
+                </figure>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section>
+          <div class="wrap">
+            <h3>Fixing soldering mistakes</h3>
+            <ul class="flexblock gallery">
+              <li>
+                <figure>
+                  <video controls loop height="320px" poster="images/rework-reflow-poster.jpeg">
+                    <source src="images/rework-reflow.mov" />
+                  </video>
+                  <figcaption>
+                    <h2>Reflow</h2>
+                    <p>
+                      If you end up with an unwanted connection between adjacent leads, sometimes it's enough to just
+                      simultaneously melt both and let the solder reflow.
+                    </p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <video controls loop height="320px" poster="images/rework-wicking-poster.jpeg">
+                    <source src="images/rework-wicking.mov" />
+                  </video>
+                  <figcaption>
+                    <h2>Removing excess</h2>
+                    <p>
+                      If you end up with too much solder, you can remove it with copper braid, which wicks up solder.
+                    </p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img src="images/rework-braid.jpeg" />
+                  <figcaption>
+                    <h2>Copper braid</h2>
+                    <p>Make sure you hold copper braid by the plastic container, not by the metal.</p>
+                  </figcaption>
+                </figure>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section>
+          <div class="wrap">
+            <h3>Solder jumpers</h3>
+            <ul class="flexblock gallery">
+              <li>
+                <figure>
+                  <img src="images/jumper-outline.jpeg" />
+                  <figcaption>
+                    <h2>Location</h2>
+                    <p>There are three solder jumpers.</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img src="images/jumper-soldering.jpeg" />
+                  <figcaption>
+                    <h2>Soldering</h2>
+                    <p>Put a small blob of solder across the two pads of each jumper.</p>
+                  </figcaption>
+                </figure>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section>
+          <div class="wrap">
+            <h3>Testing</h3>
+            <ul class="flexblock gallery">
+              <li>
+                <figure>
+                  <img src="images/test-off.jpeg" />
+                  <figcaption>
+                    <h2>Turn everything off</h2>
+                    <p>Flip all four switches to off (towards the “1”-“4” labels and away from the “on” label).</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img src="images/test-battery.jpeg" />
+                  <figcaption>
+                    <h2>Insert a battery</h2>
+                    <p>Slide it under the metal clip, then push down.</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img src="images/test-red.jpeg" />
+                  <figcaption>
+                    <h2>Test red</h2>
+                    <p>Flip switches to on-on-off-off; both LEDs should be red.</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img src="images/test-green.jpeg" />
+                  <figcaption>
+                    <h2>Test green</h2>
+                    <p>Flip switches to on-off-on-off; both LEDs should be green.</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img src="images/test-blue.jpeg" />
+                  <figcaption>
+                    <h2>Test blue</h2>
+                    <p>Flip switches to on-off-off-on; both LEDs should be blue.</p>
+                  </figcaption>
+                </figure>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section>
+          <div class="wrap">
+            <h3>Color selection</h3>
+            <ul class="flexblock gallery">
+              <li>
+                <div><h2>Pick a color pair</h2></div>
+                Your LEDs will show one color with the board right side up, and the other when you flip the board
+              </li>
+              <li>
+                <div><h2>Blue / purple or green / yellow</h2></div>
+                Desolder the left solder jumper and solder in the left tilt switch
+              </li>
+              <li>
+                <div><h2>Blue / light blue or red / yellow</h2></div>
+                Desolder the middle solder jumper and solder in the middle tilt switch
+              </li>
+              <li>
+                <div><h2>Green / light blue or red / purple</h2></div>
+                Desolder the right solder jumper and solder in the right tilt switch
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section>
+          <div class="wrap">
+            <h3>Tilt switch</h3>
+            <ul class="flexblock gallery">
+              <li>
+                <figure>
+                  <img src="images/tilt-switch-outline.jpeg" />
+                  <figcaption>
+                    <h2>Location</h2>
+                    <p>
+                      There are three places for a tilt switch; you will solder in one (based on the color choice you
+                      made before).
+                    </p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img src="images/tilt-switch-jumper.jpeg" />
+                  <figcaption>
+                    <h2>Desolder jumper</h2>
+                    <p>Desolder the jumper next to the tilt switch using copper braid.</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img src="images/tilt-switch-orientation.jpeg" />
+                  <figcaption>
+                    <h2>Orientation</h2>
+                    <p>Orientation doesn't matter.</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img src="images/tilt-switch-prep.jpeg" />
+                  <figcaption>
+                    <h2>Prep</h2>
+                    <p>Slightly bend the leads to keep it from falling out.</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img src="images/tilt-switch-height.jpeg" />
+                  <figcaption>
+                    <h2>Height</h2>
+                    <p>Make it about the same distance from the board as the LEDs.</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img src="images/tilt-switch-trim-leads.jpeg" />
+                  <figcaption>
+                    <h2>Finishing up</h2>
+                    <p>Clip off excess leads.</p>
+                  </figcaption>
+                </figure>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section>
+          <div class="wrap">
+            <h3>Color tinkering</h3>
+            <ul class="flexblock gallery">
+              <li>
+                <div><h2>Play with the switches to see what other colors you can get</h2></div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </article>
+    </main>
+    <!--main-->
+
+    <!-- Required -->
+    <script src="../webslides-1.5.0/js/webslides.js"></script>
+
+    <script>
+      window.ws = new WebSlides({ loop: false, navigateOnScroll: false });
+    </script>
+
+    <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
+    <script defer src="../webslides-1.5.0/js/svg-icons.js"></script>
+  </body>
+</html>
