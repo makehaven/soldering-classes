@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>MakeHaven Electronics: Surface-mount Soldering</title>
+    <meta name="description" content="Tutorial for the MakeHaven through-hole soldering class." />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext"
+      rel="stylesheet"
+    />
+
+    <!-- CSS Base -->
+    <link rel="stylesheet" type="text/css" media="all" href="../webslides-1.5.0/css/webslides.css" />
+    <style>
+      .gallery li {
+        background-color: white;
+      }
+      .flexblock.gallery li video {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100%;
+      }
+    </style>
+
+    <!-- Optional - CSS SVG Icons (Font Awesome) -->
+    <link rel="stylesheet" type="text/css" media="all" href="../webslides-1.5.0/css/svg-icons.css" />
+
+    <!-- FAVICONS -->
+    <link rel="shortcut icon" sizes="16x16" href="../webslides-1.5.0/images/favicons/favicon.png" />
+    <link rel="shortcut icon" sizes="32x32" href="../webslides-1.5.0/images/favicons/favicon-32.png" />
+    <link rel="apple-touch-icon icon" sizes="76x76" href="../webslides-1.5.0/images/favicons/favicon-76.png" />
+    <link rel="apple-touch-icon icon" sizes="120x120" href="../webslides-1.5.0/images/favicons/favicon-120.png" />
+    <link rel="apple-touch-icon icon" sizes="152x152" href="../webslides-1.5.0/images/favicons/favicon-152.png" />
+    <link rel="apple-touch-icon icon" sizes="180x180" href="../webslides-1.5.0/images/favicons/favicon-180.png" />
+    <link rel="apple-touch-icon icon" sizes="192x192" href="../webslides-1.5.0/images/favicons/favicon-192.png" />
+
+    <!-- Android -->
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="theme-color" content="#333333" />
+  </head>
+  <body>
+    <main role="main">
+      <article id="webslides">
+        <section>
+          <div class="wrap">
+            <h1>MakeHaven Electronics</h1>
+            <h3>Surface-Mount Soldering Tutorial</h3>
+          </div>
+        </section>
+        <section>
+          <div class="wrap">
+            <img src="images/qr.svg" style="height: 700px" />
+            <a href="https://makehaven.github.io/soldering-classes/surface-mount">
+              <pre>https://makehaven.github.io/soldering-classes/surface-mount</pre>
+            </a>
+          </div>
+        </section>
+        <section>
+          <div class="wrap">
+            <h3>Supplies</h3>
+            <ul class="flexblock gallery">
+              <li>
+                <figure>
+                  <img src="images/supplies-parts.jpeg" />
+                  <figcaption>
+                    <h2>Parts</h2>
+                    <p>
+                      You should have: one switch bank (of four switches), six tiny resistors, two LEDs, one tilt
+                      switch, and one battery holder. Do not remove the resistors and the LEDs from their packaging
+                      until you are ready to solder them.
+                    </p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img src="images/supplies-equipment.jpeg" />
+                  <figcaption>
+                    <h2>Equipment</h2>
+                    <p>
+                      You should have: a magnifier (with interchangeable lenses), a PCB holder, a (capped) flux syringe,
+                      a flux dispensing needle, a tube of solder (coiled), a set of tweezers, a tube of desoldering
+                      solder (not coiled), a pair of flush cutters, a spool of copper braid, a soldering iron with a
+                      fine tip, a brass sponge (in a holder), and a fume extractor (not pictured).
+                    </p>
+                  </figcaption>
+                </figure>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section>
+          <div class="wrap">
+            <h3>General flow</h3>
+            <ul class="flexblock gallery">
+              <li>
+                <figure>
+                  <img src="images/general-board-side.jpeg" />
+                  <figcaption>
+                    <h2>Location</h2>
+                    <p>
+                      Check component outlines printed on the board to see on which side the component should end up.
+                    </p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img src="images/general-orientation.jpeg" />
+                  <figcaption>
+                    <h2>Orientation</h2>
+                    <p>
+                      Some components can go onto the board multiple ways, but only one is correct; look for board
+                      markings and solder pad shapes.
+                    </p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img src="images/general-one-lead.jpeg" />
+                  <figcaption>
+                    <h2>Solder one lead</h2>
+                    <p>Always start by soldering just one lead.</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img src="images/general-position.jpeg" />
+                  <figcaption>
+                    <h2>Position</h2>
+                    <p>Make sure that all component leads are lined up with their respective pads.</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img src="images/general-all-leads.jpeg" />
+                  <figcaption>
+                    <h2>Solder in remaining leads</h2>
+                    <p>Solder the rest of the leads.</p>
+                  </figcaption>
+                </figure>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section>
+          <div class="wrap">
+            <h3>Soldering</h3>
+            <ul class="flexblock gallery">
+              <li>
+                <figure>
+                  <video controls loop poster="images/soldering-clean-tip-poster.jpeg">
+                    <source src="images/soldering-clean-tip.mov" />
+                  </video>
+                  <figcaption>
+                    <h2>Keep your soldering tip clean</h2>
+                    <p>Swipe it back and forth on the brass tip cleaner; use one hand to hold down the cleaner.</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img src="images/soldering-coat-tip.jpeg" />
+                  <figcaption>
+                    <h2>Coat the soldering tip</h2>
+                    <p>Coat the soldering tip with a small amount of solder.</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img src="images/soldering-apply-flux.jpeg" />
+                  <figcaption>
+                    <h2>Apply flux</h2>
+                    <p>Before soldering, apply flux to the pads.</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <video controls loop poster="images/soldering-one-pad-poster.jpeg">
+                    <source src="images/soldering-one-pad.mov" />
+                  </video>
+                  <figcaption>
+                    <h2>Coat a pad with solder</h2>
+                    <p>Before placing the component on the board, coat one pad with solder; corner pads are best.</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img src="images/soldering-place-component.jpeg" />
+                  <figcaption>
+                    <h2>Place the component</h2>
+                    <p>Place the component on the pads; it will not sit flush because you coated one pad.</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img src="images/soldering-heat-pad.jpeg" />
+                  <figcaption>
+                    <h2>Heat the coated pad</h2>
+                    <p>
+                      Heat the pad you previously coated with solder; press down on the component with tweezers. The
+                      component may shift as you do this; that's okay.
+                    </p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img src="images/soldering-adjust-position.jpeg" />
+                  <figcaption>
+                    <h2>Adjust position</h2>
+                    <p>
+                      If the component is not correctly positioned, reheat the pad and adjust placement with tweezers.
+                    </p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img src="images/soldering-finish.jpeg" />
+                  <figcaption>
+                    <h2>Solder remaining pads</h2>
+                    <p>Solder the remaining pads.</p>
+                  </figcaption>
+                </figure>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section>
+          <div class="wrap">
+            <h3>Switches</h3>
+            <ul class="flexblock gallery">
+              <li>
+                <figure>
+                  <img src="images/switch-outline.jpeg" />
+                  <figcaption>
+                    <h2>Location</h2>
+                    <p>There is one component; it contains four switches.</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img src="images/switch-orientation.jpeg" />
+                  <figcaption>
+                    <h2>Orientation</h2>
+                    <p>
+                      Orientation doesn’t <em>really</em> matter, but these instructions assume the “on” side is closer
+                      to the LED.
+                    </p>
+                  </figcaption>
+                </figure>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section>
+          <div class="wrap">
+            <h3>LEDs</h3>
+            <ul class="flexblock gallery">
+              <li>
+                <figure>
+                  <img src="images/led-outline.jpeg" />
+                  <figcaption>
+                    <h2>Location</h2>
+                    <p>There are two LEDs, one on each side of the board.</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img src="images/led-orientation.jpeg" />
+                  <figcaption>
+                    <h2>Orientation</h2>
+                    <p>Orientation matters; the marked corner of the LED goes to the marked corner of the outline.</p>
+                  </figcaption>
+                </figure>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section>
+          <div class="wrap">
+            <h3>Resistors</h3>
+            <ul class="flexblock gallery">
+              <li>
+                <figure>
+                  <img src="images/resistor-outline.jpeg" />
+                  <figcaption>
+                    <h2>Location</h2>
+                    <p>
+                      There are six resistors — three on each side of the board and all identical; they are very small.
+                    </p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img src="images/resistor-orientation.jpeg" />
+                  <figcaption>
+                    <h2>Orientation</h2>
+                    <p>Orientation doesn’t matter.</p>
+                  </figcaption>
+                </figure>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section>
+          <div class="wrap">
+            <h3>Battery holder</h3>
+            <ul class="flexblock gallery">
+              <li>
+                <figure>
+                  <img src="images/battery-holder-outline.jpeg" />
+                  <figcaption>
+                    <h2>Location</h2>
+                    <p>There is one battery holder.</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img src="images/battery-holder-orientation.jpeg" />
+                  <figcaption>
+                    <h2>Orientation</h2>
+                    <p>
+                      Orientation matters; the marked corner of the battery holder goes to the marked corner of the
+                      outline.
+                    </p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img src="images/battery-holder-orientation.jpeg" />
+                  <figcaption>
+                    <h2>Soldering</h2>
+                    <p>You may find it easier to coat both pads with solder right from the start.</p>
+                  </figcaption>
+                </figure>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section>
+          <div class="wrap">
+            <h3>Fixing soldering mistakes</h3>
+            <ul class="flexblock gallery">
+              <li>
+                <figure>
+                  <video controls loop poster="images/rework-reflow-poster.jpeg">
+                    <source src="images/rework-reflow.mov" />
+                  </video>
+                  <figcaption>
+                    <h2>Reflow</h2>
+                    <p>
+                      If you end up with an unwanted connection between adjacent leads, sometimes it's enough to just
+                      simultaneously heat both and let the solder reflow.
+                    </p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <video controls loop poster="images/rework-wicking-poster.jpeg">
+                    <source src="images/rework-wicking.mov" />
+                  </video>
+                  <figcaption>
+                    <h2>Removing excess</h2>
+                    <p>
+                      If you end up with too much solder, you can remove it with copper braid, which wicks up solder.
+                    </p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img src="images/rework-braid.jpeg" />
+                  <figcaption>
+                    <h2>Copper braid</h2>
+                    <p>Make sure you hold copper braid by the plastic container, not by the metal.</p>
+                  </figcaption>
+                </figure>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section>
+          <div class="wrap">
+            <h3>Desoldering</h3>
+            <ul class="flexblock gallery">
+              <li>
+                <figure>
+                  <img src="images/desoldering-solder.jpeg" />
+                  <figcaption>
+                    <h2>Desoldering solder</h2>
+                    <p>
+                      If you need to reposition or remove a component, you will have to desolder it completely and start
+                      over, using <em>desoldering solder</em> aka <em>rework solder</em>, which stays liquid for much
+                      longer than regular solder.
+                    </p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img src="images/desoldering-apply-solder.jpeg" />
+                  <figcaption>
+                    <h2>Liberally apply desoldering solder</h2>
+                    <p>
+                      The goal is for most leads on the same side of the component to be in one blob of desolding
+                      solder.
+                    </p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <video controls loop poster="images/desoldering-heat-component-poster.jpeg">
+                    <source src="images/desoldering-heat-component.mov" />
+                  </video>
+                  <figcaption>
+                    <h2>Heat all leads of the component</h2>
+                    <p>
+                      Because of how slowly this solder cools, you have a few seconds, but you still have to move
+                      quickly.
+                    </p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <video controls loop poster="images/desoldering-push-component-poster.jpeg">
+                    <source src="images/desoldering-push-component.mov" />
+                  </video>
+                  <figcaption>
+                    <h2>Push the component</h2>
+                    <p>
+                      While heating the leads all around, apply firm, but gentle, sideways pressure on the component
+                      with tweezers.
+                    </p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <video controls loop poster="images/desoldering-clean-pads-poster.jpeg">
+                    <source src="images/desoldering-clean-pads.mov" />
+                  </video>
+                  <figcaption>
+                    <h2>Clean the board</h2>
+                    <p>After the component slides off, clean off all the solder on the pads using copper braid.</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <video controls loop poster="images/desoldering-clean-leads-poster.jpeg">
+                    <source src="images/desoldering-clean-leads.mov" />
+                  </video>
+                  <figcaption>
+                    <h2>Clean the component</h2>
+                    <p>Also clean off the solder from the component before you solder it back in.</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img src="images/desoldering-reapply-flux.jpeg" />
+                  <figcaption>
+                    <h2>Start over</h2>
+                    <p>You can now solder the component back in; remember to re-flux.</p>
+                  </figcaption>
+                </figure>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section>
+          <div class="wrap">
+            <h3>Solder jumpers</h3>
+            <ul class="flexblock gallery">
+              <li>
+                <figure>
+                  <img src="images/jumper-outline.jpeg" />
+                  <figcaption>
+                    <h2>Location</h2>
+                    <p>There are three solder jumpers.</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img src="images/jumper-soldering.jpeg" />
+                  <figcaption>
+                    <h2>Soldering</h2>
+                    <p>Put a small blob of solder across the two pads of each jumper.</p>
+                  </figcaption>
+                </figure>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section>
+          <div class="wrap">
+            <h3>Testing</h3>
+            <ul class="flexblock gallery">
+              <li>
+                <figure>
+                  <img src="images/test-off.jpeg" />
+                  <figcaption>
+                    <h2>Turn everything off</h2>
+                    <p>Flip all four switches to off (towards the “1”-“4” labels and away from the “on” label).</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img src="images/test-battery.jpeg" />
+                  <figcaption>
+                    <h2>Insert a battery</h2>
+                    <p>Slide it under the metal clip, then push down.</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img src="images/test-red.jpeg" />
+                  <figcaption>
+                    <h2>Test red</h2>
+                    <p>Flip switches to on-on-off-off; both LEDs should be red.</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img src="images/test-green.jpeg" />
+                  <figcaption>
+                    <h2>Test green</h2>
+                    <p>Flip switches to on-off-on-off; both LEDs should be green.</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img src="images/test-blue.jpeg" />
+                  <figcaption>
+                    <h2>Test blue</h2>
+                    <p>Flip switches to on-off-off-on; both LEDs should be blue.</p>
+                  </figcaption>
+                </figure>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section>
+          <div class="wrap">
+            <h3>Pick a color pair</h3>
+            <div>
+              Your LEDs will show one color with the board right side up, and the other when you flip the board.
+            </div>
+            <ul class="flexblock border">
+              <li>
+                <div>
+                  <h2>
+                    <svg class="fa-circle" style="color: #4547ff"><use xlink:href="#fa-circle"></use></svg>
+                    <svg class="fa-circle" style="color: #b5004d"><use xlink:href="#fa-circle"></use></svg>
+                    Blue / purple or <br />
+                    <svg class="fa-circle" style="color: #23b260"><use xlink:href="#fa-circle"></use></svg>
+                    <svg class="fa-circle" style="color: #f5a447"><use xlink:href="#fa-circle"></use></svg>
+                    Green / yellow
+                  </h2>
+                  <p>Desolder the solder jumper #1 and solder in tilt switch #1.</p>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h2>
+                    <svg class="fa-circle" style="color: #4547ff"><use xlink:href="#fa-circle"></use></svg>
+                    <svg class="fa-circle" style="color: #288a7f"><use xlink:href="#fa-circle"></use></svg>
+                    Blue / teal or <br />
+                    <svg class="fa-circle" style="color: #ff3b37"><use xlink:href="#fa-circle"></use></svg>
+                    <svg class="fa-circle" style="color: #f5a447"><use xlink:href="#fa-circle"></use></svg>
+                    Red / yellow
+                  </h2>
+                  <p>Desolder the solder jumper #2 and solder in tilt switch #2.</p>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h2>
+                    <svg class="fa-circle" style="color: #23b260"><use xlink:href="#fa-circle"></use></svg>
+                    <svg class="fa-circle" style="color: #288a7f"><use xlink:href="#fa-circle"></use></svg>
+                    Green / teal or<br />
+                    <svg class="fa-circle" style="color: #ff3b37"><use xlink:href="#fa-circle"></use></svg>
+                    <svg class="fa-circle" style="color: #b5004d"><use xlink:href="#fa-circle"></use></svg>
+                    Red / purple
+                  </h2>
+                  <p>Desolder the solder jumper #3 and solder in tilt switch #3.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section>
+          <div class="wrap">
+            <h3>Tilt switch</h3>
+            <ul class="flexblock gallery">
+              <li>
+                <figure>
+                  <img src="images/tilt-switch-outline.jpeg" />
+                  <figcaption>
+                    <h2>Location</h2>
+                    <p>
+                      There are three places for a tilt switch; you will solder in one (based on the color choice you
+                      made before).
+                    </p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img src="images/tilt-switch-jumper.jpeg" />
+                  <figcaption>
+                    <h2>Desolder jumper</h2>
+                    <p>Desolder the jumper next to the tilt switch using copper braid.</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img src="images/tilt-switch-orientation.jpeg" />
+                  <figcaption>
+                    <h2>Orientation</h2>
+                    <p>Orientation doesn't matter.</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img src="images/tilt-switch-prep.jpeg" />
+                  <figcaption>
+                    <h2>Prep</h2>
+                    <p>Slightly bend the leads to keep it from falling out.</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img src="images/tilt-switch-height.jpeg" />
+                  <figcaption>
+                    <h2>Height</h2>
+                    <p>Make it about the same distance from the board as the height of the switches.</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img src="images/tilt-switch-trim-leads.jpeg" />
+                  <figcaption>
+                    <h2>Finishing up</h2>
+                    <p>After soldering in the tilt switch, clip off excess leads.</p>
+                  </figcaption>
+                </figure>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </article>
+    </main>
+    <!--main-->
+
+    <!-- Required -->
+    <script src="../webslides-1.5.0/js/webslides.js"></script>
+
+    <script>
+      window.ws = new WebSlides({ loop: false, navigateOnScroll: false });
+    </script>
+
+    <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
+    <script defer src="../webslides-1.5.0/js/svg-icons.js"></script>
+  </body>
+</html>
